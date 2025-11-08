@@ -615,6 +615,17 @@ document.getElementById('expandBtn').addEventListener('click', function() {
     document.body.classList.toggle('expanded')
 });
 
+document.querySelectorAll('.app-template').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        rotate = Math.floor(Math.random() * (5 - (-5) + 1)) + (-5)
+        card.style.transform = "rotate(" + rotate + "deg)"
+    })
+    
+    card.addEventListener('mouseleave', function() {
+        card.style.transform = "rotate(0deg)"
+    })
+})
+
 fetch("https://fuck.buage.dev/stats.php")
 .then(res => res.json())
 .then(data => {
