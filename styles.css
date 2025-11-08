@@ -363,3 +363,32 @@ hr {
 .social-icon {
     color: var(--color-text-secondary);
 }
+
+.main-content {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+body.expanded .apps-container {
+    width: 1320px;
+    height: 700px;
+}
+
+body.expanded .app-meta p {
+    font-size: 17px !important;
+}
+
+body.expanded .app-tag p{
+    font-size: 14px !important;
+}
+
+body.expanded .app-sub{
+    font-size: 14px !important;
+}
+
+@media (max-width: 1404px) {
+    #expandBtn {
+        display: none;
+    }
+}
