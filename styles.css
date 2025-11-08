@@ -219,11 +219,43 @@ body {
         margin-left: 50%;
         transform: translateX(-50%);
     }
+
+    #searchInput {
+        max-width: 410px;
+    }
+
+    .filters {
+        max-width: 410px;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .filter-def {
+        display: flex;
+        min-width: 88% !important;
+    }
+
+    .full {
+        display: flex;
+    }
 }
 
 .app-template:hover {
     transform: scale(1.07);
     filter: brightness(1.3);
+}
+
+#searchInput {
+    width: 740px;
+    height: 50px;
+    padding: 0px;
+    line-height: 0px;
+    text-indent: 20px;
+    font-size: 16px;
+    outline: none;
+    color: var(--color-button-bg);
 }
 
 .filters {

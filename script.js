@@ -398,6 +398,26 @@ function sortResults() {
     });
 }
 
+function sortSearch(text) {
+    const container = document.querySelector('.apps-container');
+    container.innerHTML = "";
+
+    const search = text.trim().toLowerCase();
+
+    apps.forEach(app => {
+        const hasMatch =
+            !search || 
+            app.name.toLowerCase().includes(search) ||
+            app.description?.toLowerCase().includes(search) ||
+            app.tags?.some(tag => tag.toLowerCase().includes(search));
+
+        if (hasMatch) {
+            const card = createAppCard(app);
+            container.appendChild(card);
+        }
+    });
+}
+
 function createFilter(name, full = false) {
     const id = full ? `full-${name}` : name;
     if (existingFilters.includes(id)) return;
@@ -449,6 +469,10 @@ document.getElementById('filtersApplyBtn').addEventListener('click', function() 
     document.querySelector('.more-filters').style.display = 'none'
     document.querySelector('.overlay').style.display = 'none'
 })
+
+document.getElementById('searchInput').addEventListener('input', function() {
+    sortSearch(document.getElementById('searchInput').value)
+});
 
 fetch("https://fuck.buage.dev/stats.php")
 .then(res => res.json())
