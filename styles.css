@@ -110,7 +110,10 @@ body {
     height: 150px;
     gap: 10px;
     display: flex;
+    transition: all 0.2s ease-in-out;
     flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .app-template-icon {
@@ -216,4 +219,9 @@ body {
         margin-left: 50%;
         transform: translateX(-50%);
     }
+}
+
+.app-template:hover {
+    transform: scale(1.07);
+    filter: brightness(1.3);
 }

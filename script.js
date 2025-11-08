@@ -41,7 +41,7 @@ const apps = [
 
     {
         name: "Pi-Hole",
-        url: "https://about.gitlab.com/",
+        url: "https://pi-hole.net/",
         icon: "/files/icons/Pi-Hole-Small.png",
         description: "Block all ads and trackers with a single Raspbery Pi using Pi-Hole. Say goodbye to annoying ads on mobile and pc!",
         tags: ["DNS", "Ad blocking"]
@@ -60,7 +60,7 @@ const apps = [
         url: "https://adguard.com/en/adguard-home/overview.html",
         icon: "/files/icons/AdGuard-Small.png",
         description: "Block any ads just like PiHole. AdGuard home also blocks trackers too.",
-        tags: ["Monitoring", "Uptime"]
+        tags: ["DNS", "Ad blocking"]
     },
 
     {
@@ -68,7 +68,7 @@ const apps = [
         url: "https://owncloud.com/",
         icon: "/files/icons/OwnCloud-Small.png",
         description: "Store your files securely on your servers using OwnCloud.",
-        tags: ["Monitoring", "Uptime"]
+        tags: ["storage", "cloud"]
     },
 
     {
@@ -249,7 +249,7 @@ const apps = [
 
     {
         name: "ShareX",
-        url: "https://github.com/immich-app/immich",
+        url: "https://github.com/ShareX/ShareX",
         icon: "/files/icons/ShareX-Small.png",
         description: "Easy to use and powerful screen recorder, and allows you to upload your files to any server you want.",
         tags: ["video", "storage"]
@@ -338,9 +338,10 @@ const apps = [
 ];
 
 function createAppCard(app) {
-    const card = document.createElement("div");
+    const card = document.createElement("a");
     card.className = "app-template card";
-    card.onclick = () => window.open(app.url, "_blank");
+    card.href = app.url
+    card.target = "_blank"
 
     const metaTop = document.createElement("div");
     metaTop.className = "app-meta app-meta-top";
@@ -389,4 +390,4 @@ fetch("https://fuck.buage.dev/stats.php")
     document.querySelector('.header-views').textContent = data.totals.visits + ' views'
 })
 
-fetch('https://fuck.buage.dev/visit.php');
+//fetch('https://fuck.buage.dev/visit.php');
