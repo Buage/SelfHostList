@@ -359,6 +359,30 @@ const apps = [
         description: "Modern dashboard for all your self hosted servies, highly customizable, easy to use, lighweight, real time updates and more! Everything you need is there.",
         tags: ["dashboard", "monitoring"]
     },
+
+    {
+        name: "RetroShare",
+        url: "https://github.com/RetroShare/RetroShare",
+        icon: "/files/icons/RetroShare-Small.png",
+        description: "Secure and decentralized chat platform, allowing forums, file transfer, messaging and more.",
+        tags: ["communication", "social"]
+    },
+
+    {
+        name: "StatPing.ng",
+        url: "https://github.com/statping-ng/statping-ng",
+        icon: "/files/icons/StatPing-Small.png",
+        description: "Monitor websites status easily, and get notified when one is down, it's kinda like uptime kuma.",
+        tags: ["monitoring", "uptime"]
+    },
+
+    {
+        name: "Accent",
+        url: "https://github.com/mirego/accent",
+        icon: "/files/icons/Accent-Small.png",
+        description: "Make translation easier for your websites in your team, with am UI, and a complete logs history.",
+        tags: ["tools", "localization"]
+    },
 ];
 
 const existingFilters = [];
