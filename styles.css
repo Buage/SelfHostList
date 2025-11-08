@@ -359,3 +359,7 @@ hr {
     height: 45px;
     margin-top: 10px;
 }
+
+.social-icon {
+    color: var(--color-text-secondary);
+}
