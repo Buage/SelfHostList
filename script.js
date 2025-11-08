@@ -472,6 +472,62 @@ const apps = [
         description: "Simple file uploader to view files in a folder without opening it or anything.",
         tags: ["file"]
     },
+
+    {
+        name: "LocalSend",
+        url: "https://github.com/localsend/localsend",
+        icon: "/files/icons/LocalSend-Small.png",
+        description: "Open source alternative to Pairdrop and Airdrop. Like Pairdrop, it works on anything and you can transfer any files!",
+        tags: ["file", "file sharing"]
+    },
+
+    {
+        name: "YOURLS",
+        url: "https://yourls.org/docs",
+        icon: "/files/icons/Yourls-Small.png",
+        description: "Simple and efficient URL shortener made using PHP and MySql.",
+        tags: ["URL Shortener"]
+    },
+
+    {
+        name: "ClamAV",
+        url: "https://github.com/Cisco-Talos/clamav",
+        icon: "/files/icons/ClamAV-Small.png",
+        description: "Powerful self hosted and completly free antivirus for your servers for avoiding malicious files.",
+        tags: ["security", "antivirus"]
+    },
+
+    {
+        name: "Friendica",
+        url: "https://github.com/friendica/friendica",
+        icon: "/files/icons/Friendica-Small.png",
+        description: "Free and open source social network just like Mastodon for your community or your friends.",
+        tags: ["social", "communication"]
+    },
+
+    {
+        name: "AppFlowy",
+        url: "https://github.com/appflowy-io/appflowy",
+        icon: "/files/icons/AppFlowy-Small.png",
+        description: "A feature rich and modern alternative to Notion, with project monitoring, AI and templates.",
+        tags: ["to-do list", "tasks"]
+    },
+
+    {
+        name: "ByteStash",
+        url: "https://github.com/jordan-dalby/ByteStash",
+        icon: "/files/icons/ByteStash-Small.png",
+        description: "A pastebin alternative to store all your code snippets, organise it and manage it, simply with a login screen.",
+        tags: ["text", "pastebin"]
+    },
+
+    {
+        name: "Blocky",
+        url: "https://0xerr0r.github.io/blocky/latest/",
+        icon: "/files/icons/Blocky-Small.png",
+        description: "Lightweight DNS ad and tracker blocker for all your devices, it's powerful, secure and it supports grafana!",
+        tags: ["DNS", "Ad blocking"]
+    },
 ];
 
 const existingFilters = [];
