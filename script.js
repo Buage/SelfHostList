@@ -522,11 +522,11 @@ const apps = [
     },
 
     {
-        name: "Blocky",
-        url: "https://0xerr0r.github.io/blocky/latest/",
-        icon: "/files/icons/Blocky-Small.png",
-        description: "Lightweight DNS ad and tracker blocker for all your devices, it's powerful, secure and it supports grafana!",
-        tags: ["DNS", "Ad blocking"]
+        name: "Gatus",
+        url: "https://github.com/TwiN/gatus",
+        icon: "/files/icons/Gatus-Small.png",
+        description: "An uptime kuma alternative to monitor websites and get alerts when one goes down or have a problem.",
+        tags: ["Uptime", "Monitoring"]
     },
 ];
 
