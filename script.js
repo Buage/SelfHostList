@@ -385,14 +385,6 @@ const apps = [
     },
 
     {
-        name: "Accent",
-        url: "https://github.com/mirego/accent",
-        icon: "/files/icons/Accent-Small.png",
-        description: "Make translation easier for your websites in your team, with am UI, and a complete logs history.",
-        tags: ["tools", "localization"]
-    },
-
-    {
         name: "DashLit",
         url: "https://dashlit.cwec.dev/",
         icon: "/files/icons/Dashlit-Small.png",
@@ -406,6 +398,30 @@ const apps = [
         icon: "/files/icons/CronMaster-Small.png",
         description: "A simple front end to create, manager, and delete cron jobs, with a modern UI.",
         tags: ["task scheduling", "automation"]
+    },
+
+    {
+        name: "Lufin",
+        url: "https://github.com/VityaSchel/lufin",
+        icon: "/files/icons/Lufin-Small.png",
+        description: "Lufin is a simple file sharing app, with previews for images, audio, video, text files, zip archives, PDF, and XLSX files.",
+        tags: ["file sharing", "storage"]
+    },
+
+    {
+        name: "Ghostboard",
+        url: "https://github.com/jon6fingrs/ghostboard",
+        icon: "/files/icons/Ghostboard-Small.png",
+        description: "Real time text sharing with anyone, between any devices. No encryption tho, but it can help sometimes!",
+        tags: ["text", "synchronization"]
+    },
+
+    {
+        name: "Portracker",
+        url: "https://github.com/mostafa-wahied/portracker",
+        icon: "/files/icons/Portracker-Small.png",
+        description: "Real time port monitory and discovery tool for your local network, with a very cool UI!",
+        tags: ["management", "server"]
     },
 ];
 
