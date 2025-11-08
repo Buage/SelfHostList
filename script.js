@@ -337,6 +337,9 @@ const apps = [
     },
 ];
 
+const existingFilters = [];
+const appliedFilters = {};
+
 function createAppCard(app) {
     const card = document.createElement("a");
     card.className = "app-template card";
@@ -379,9 +382,72 @@ function createAppCard(app) {
     return card;
 }
 
+function sortResults() {
+    const container = document.querySelector('.apps-container');
+    container.innerHTML = "";
+
+    const anyFilterActive = Object.values(appliedFilters).some(value => value === true);
+
+    apps.forEach(app => {
+        const hasActiveFilter = app.tags.some(tag => appliedFilters[tag]);
+
+        if (!anyFilterActive || hasActiveFilter) {
+            const card = createAppCard(app);
+            container.appendChild(card);
+        }
+    });
+}
+
+function createFilter(name, full = false) {
+    const id = full ? `full-${name}` : name;
+    if (existingFilters.includes(id)) return;
+    existingFilters.push(id);
+
+    const div = document.createElement("div");
+    div.className = "filter card";
+    div.dataset.id = name;
+
+    const p = document.createElement("p");
+    p.className = "filter-text";
+    p.textContent = name;
+
+    div.appendChild(p);
+
+    div.addEventListener('click', function() {
+        appliedFilters[name] = !appliedFilters[name];
+
+        document.querySelectorAll(`.filter[data-id="${name}"]`).forEach(el => {
+            el.classList.toggle('enabled', appliedFilters[name]);
+        });
+
+        sortResults();
+    });
+
+    if (full) {
+        div.classList.add('full');
+        document.querySelector(".filters-container").appendChild(div);
+    } else {
+        document.querySelector(".filters").appendChild(div);
+    }
+}
+
+const uniqueTags = [...new Set(apps.flatMap(app => app.tags))];
+uniqueTags.slice(0, 5).forEach(tag => createFilter(tag));
+uniqueTags.forEach(tag => createFilter(tag, true));
+
 apps.forEach(app => {
     const card = createAppCard(app)
     document.getElementById('appsContainer').appendChild(card)
+})
+
+document.getElementById('moreFiltersBtn').addEventListener('click', function() {
+    document.querySelector('.more-filters').style.display = 'flex'
+    document.querySelector('.overlay').style.display = 'block'
+});
+
+document.getElementById('filtersApplyBtn').addEventListener('click', function() {
+    document.querySelector('.more-filters').style.display = 'none'
+    document.querySelector('.overlay').style.display = 'none'
 })
 
 fetch("https://fuck.buage.dev/stats.php")

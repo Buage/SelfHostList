@@ -225,3 +225,105 @@ body {
     transform: scale(1.07);
     filter: brightness(1.3);
 }
+
+.filters {
+    width: 740px;
+    height: 50px;
+    padding: 0px;
+    line-height: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.filter {
+    padding: 0;
+    height: 5px;
+    min-width: 80px;
+    width: auto;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-text {
+    line-height: 6px;
+    width: 100%;
+    text-align: center;
+}
+
+.filter.enabled {
+    background-color: var(--color-button-bg);
+    color: var(--color-bg-body) !important;
+    transform: scale(1.04);
+}
+
+.filter.enabled p {
+    color: var(--color-bg-body) !important;
+}
+
+.more-filters {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 500px;
+    z-index: 6;
+
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+
+    position: absolute;
+
+    overflow-y: hidden;
+    background-color: #11111181;
+    backdrop-filter: blur(5px);
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+hr {
+    height: 0px;
+    border: 1px solid var(--color-button-bg);
+    opacity: 0.1;
+    width: 100%;
+}
+
+.filter.full {
+    width: 130px;
+}
+
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: scroll;
+    height: 360px;
+}
+
+.button {
+    background-color: var(--color-button-bg);
+    color: var(--color-button-text);
+    border: 1px solid var(--color-button-border);
+    box-shadow: 1px 1px 5px var(--color-bg-card);
+    cursor: pointer;
+    border-radius: 3rem;
+}
+
+#filtersApplyBtn {
+    height: 45px;
+    margin-top: 10px;
+}
