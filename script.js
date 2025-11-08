@@ -611,6 +611,10 @@ document.getElementById('searchInput').addEventListener('input', function() {
     sortSearch(document.getElementById('searchInput').value)
 });
 
+document.getElementById('expandBtn').addEventListener('click', function() {
+    document.body.classList.toggle('expanded')
+});
+
 fetch("https://fuck.buage.dev/stats.php")
 .then(res => res.json())
 .then(data => {
