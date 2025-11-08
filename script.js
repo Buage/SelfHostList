@@ -383,6 +383,30 @@ const apps = [
         description: "Make translation easier for your websites in your team, with am UI, and a complete logs history.",
         tags: ["tools", "localization"]
     },
+
+    {
+        name: "Accent",
+        url: "https://github.com/mirego/accent",
+        icon: "/files/icons/Accent-Small.png",
+        description: "Make translation easier for your websites in your team, with am UI, and a complete logs history.",
+        tags: ["tools", "localization"]
+    },
+
+    {
+        name: "DashLit",
+        url: "https://dashlit.cwec.dev/",
+        icon: "/files/icons/Dashlit-Small.png",
+        description: "A self hosted start / home page for your servers, with a beatiful UI and a dark mode option.",
+        tags: ["dashboard"]
+    },
+
+    {
+        name: "Cr*nMaster",
+        url: "https://github.com/fccview/cronmaster",
+        icon: "/files/icons/CronMaster-Small.png",
+        description: "A simple front end to create, manager, and delete cron jobs, with a modern UI.",
+        tags: ["task scheduling", "automation"]
+    },
 ];
 
 const existingFilters = [];
