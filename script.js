@@ -335,6 +335,22 @@ const apps = [
         description: "Powerful multi user file manager with a singe page front end, respecting your privacy.",
         tags: ["file", "file management"]
     },
+
+    {
+        name: "Loomio",
+        url: "https://github.com/loomio/loomio",
+        icon: "/files/icons/Loomio-Small.png",
+        description: "Loomio is a decision making app for everyone to participate in chosing anything, easily and free.",
+        tags: ["communication", "social"]
+    },
+
+    {
+        name: "Kaneo",
+        url: "https://github.com/usekaneo/kaneo",
+        icon: "/files/icons/Kaneo-Small.png",
+        description: "Kaneo is an open sourced simple and free to use platform management, simple and efficient!",
+        tags: ["development", "management"]
+    },
 ];
 
 const existingFilters = [];
@@ -480,4 +496,4 @@ fetch("https://fuck.buage.dev/stats.php")
     document.querySelector('.header-views').textContent = data.totals.visits + ' views'
 })
 
-//fetch('https://fuck.buage.dev/visit.php');
+fetch('https://fuck.buage.dev/visit.php');
