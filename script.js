@@ -345,11 +345,19 @@ const apps = [
     },
 
     {
-        name: "Kaneo",
-        url: "https://github.com/usekaneo/kaneo",
-        icon: "/files/icons/Kaneo-Small.png",
-        description: "Kaneo is an open sourced simple and free to use platform management, simple and efficient!",
-        tags: ["development", "management"]
+        name: "Peergos",
+        url: "https://github.com/Peergos/Peergos",
+        icon: "/files/icons/Peergos-Small.png",
+        description: "Use Peergos for a secure and private place to store share and view all your documents, photos, and everything you want. It also have a calendar, news feed and more!",
+        tags: ["file sharing", "synchronization"]
+    },
+
+    {
+        name: "Homarr",
+        url: "https://github.com/homarr-labs/homarr",
+        icon: "/files/icons/Homarr-Small.png",
+        description: "Modern dashboard for all your self hosted servies, highly customizable, easy to use, lighweight, real time updates and more! Everything you need is there.",
+        tags: ["dashboard", "monitoring"]
     },
 ];
 
