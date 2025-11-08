@@ -389,4 +389,4 @@ fetch("https://fuck.buage.dev/stats.php")
     document.querySelector('.header-views').textContent = data.totals.visits + ' views'
 })
 
-//fetch('https://fuck.buage.dev/visit.php');
+fetch('https://fuck.buage.dev/visit.php');
