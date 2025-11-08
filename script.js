@@ -423,6 +423,55 @@ const apps = [
         description: "Real time port monitory and discovery tool for your local network, with a very cool UI!",
         tags: ["management", "server"]
     },
+
+    {
+        name: "DumbWhoIs",
+        url: "https://github.com/DumbWareio/DumbWhoIs",
+        icon: "/files/icons/DumbWhoIs-Small.png",
+        description: "A simple WHOIS showing all public informations about a domain. Funny name imo btw",
+        tags: ["DNS", "networking"]
+    },
+
+    {
+        name: "DumbAssets",
+        url: "https://github.com/DumbWareio/DumbAssets",
+        icon: "/files/icons/DumbAssets-Small.png",
+        description: "Simple way to monitor your physical assets with a cool web UI, locked with a pin code.",
+        tags: ["monitoring", "tracking"]
+    },
+
+
+    {
+        name: "DumbDo",
+        url: "https://github.com/DumbWareio/DumbDo",
+        icon: "/files/icons/DumbDo-Small.png",
+        description: "A simple to use to-do list. No headache, it's super simple to setup.",
+        tags: ["to-do list", "tasks"]
+    },
+
+    {
+        name: "DumbBudget",
+        url: "https://github.com/DumbWareio/DumbBudget",
+        icon: "/files/icons/DumbBudget-Small.png",
+        description: "Manage your budget easily using DumbBudget, with a PIN protection, track your income and expenses with a clean UI.",
+        tags: ["money", "tracking"]
+    },
+
+    {
+        name: "DumbPad",
+        url: "https://github.com/DumbWareio/DumbPad",
+        icon: "/files/icons/DumbPad-Small.png",
+        description: "Online and simple notepad with an auto saving feature, no auth (you can enable it tho).",
+        tags: ["to-do list", "text"]
+    },
+
+    {
+        name: "DumbDrop",
+        url: "https://github.com/DumbWareio/DumbDrop",
+        icon: "/files/icons/DumbDrop-Small.png",
+        description: "Simple file uploader to view files in a folder without opening it or anything.",
+        tags: ["file"]
+    },
 ];
 
 const existingFilters = [];
