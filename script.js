@@ -462,7 +462,7 @@ const apps = [
         url: "https://github.com/DumbWareio/DumbPad",
         icon: "/files/icons/DumbPad-Small.png",
         description: "Online and simple notepad with an auto saving feature, no auth (you can enable it tho).",
-        tags: ["to-do list", "text"]
+        tags: ["to-do list", "text", "notes taking"]
     },
 
     {
@@ -527,6 +527,46 @@ const apps = [
         icon: "/files/icons/Gatus-Small.png",
         description: "An uptime kuma alternative to monitor websites and get alerts when one goes down or have a problem.",
         tags: ["Uptime", "Monitoring"]
+    },
+
+    {
+        name: "Penpot",
+        url: "https://github.com/penpot/penpot",
+        icon: "/files/icons/Penpot-Small.png",
+        description: "Open source design tool for your team, to create cool designs and prototypes, ready to use!",
+        tags: ["UI", "Design"]
+    },
+
+    {
+        name: "Linwood Butterfly",
+        url: "https://butterfly.linwood.dev/",
+        icon: "/files/icons/LinwoodButterfly-Small.png",
+        description: "Write your notes in your way by hand, with this minimalistic notes taking app. Customizable and on an infinite canvas!",
+        tags: ["tasks", "infinite canvas", "drawing"]
+    },
+
+    {
+        name: "Trilium Notes",
+        url: "https://triliumnotes.org/",
+        icon: "/files/icons/TrilliumNotes-Small.png",
+        description: "Free solution for note taking and organizing your personnal knowledge base, you can even sync all your notes when you need!",
+        tags: ["text", "notes taking"]
+    },
+
+    {
+        name: "Notorious",
+        url: "https://github.com/danobot/notorious",
+        icon: "/files/icons/Notorious-Small.png",
+        description: "Offline notes taking, simple and easy to use.",
+        tags: ["text", "notes taking"]
+    },
+
+    {
+        name: "Spacedrive",
+        url: "https://www.spacedrive.com/",
+        icon: "/files/icons/Spacedrive-Small.png",
+        description: "Centralized file storage for all your devices, easy to use and designed for creators!",
+        tags: ["file", "file management"]
     },
 ];
 
