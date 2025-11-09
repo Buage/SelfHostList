@@ -1,3 +1,5 @@
+<img src="https://www.selfhostlist.org/files/icons/home.png" align="center">
+
 ## SelfHostList
 SelfHostList is a website that list all welf hosted apps and alternatives i know, to help you find cool apps.
 
