@@ -1,3 +1,28 @@
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {   
+    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
 const apps = [
     {
    name: "Fireshare",
@@ -742,17 +767,34 @@ document.querySelectorAll('.app-template').forEach(card => {
 
 document.getElementById('movementToggleInput').addEventListener('change', function() {
     reduceMovement = document.getElementById('movementToggleInput').checked
+    setCookie('reduceMovement', reduceMovement)
 })
 
 document.getElementById('lightToggleInput').addEventListener('change', function() {
     if (document.getElementById('lightToggleInput').checked) {
         document.body.classList.remove('dark')
         document.body.classList.add('light')
+
+        setCookie('light', true)
     } else {
         document.body.classList.add('dark')
         document.body.classList.remove('light')
+
+        setCookie('light', false)
     }
 })
+
+if (getCookie('light') === 'true') {
+    document.body.classList.remove('dark')
+    document.body.classList.add('light')
+
+    document.getElementById('lightToggleInput').checked = true;
+}
+
+if (getCookie('reduceMovement') === 'true') {
+    reduceMovement = true
+    document.getElementById('movementToggleInput').checked = true;
+}
 
 fetch("https://fuck.buage.dev/stats.php")
 .then(res => res.json())
