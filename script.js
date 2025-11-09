@@ -768,6 +768,8 @@ document.querySelectorAll('.app-template').forEach(card => {
 document.getElementById('movementToggleInput').addEventListener('change', function() {
     reduceMovement = document.getElementById('movementToggleInput').checked
     setCookie('reduceMovement', reduceMovement)
+
+    document.body.classList.toggle('rm')
 })
 
 document.getElementById('lightToggleInput').addEventListener('change', function() {

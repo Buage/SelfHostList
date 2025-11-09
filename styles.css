@@ -106,7 +106,16 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     overflow-y: scroll;
+    transition:
+        width 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+        height 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+        transform 0.4s ease-in-out;
+
     scroll-behavior: smooth;
+}
+
+body.rm .apps-container {
+    transition: none !important;
 }
 
 .app-template {
@@ -387,6 +396,7 @@ hr {
 body.expanded .apps-container {
     width: 1320px;
     height: 700px;
+    transform: scale(1.02);
 }
 
 body.expanded .app-meta p {
@@ -450,7 +460,7 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     background-color: var(--color-button-bg);
-    transform: translateX(26px);
+    transform: translateX(15px);
 }
 
 input:focus + .slider {
@@ -458,9 +468,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
 }
 
 .slider.round {
