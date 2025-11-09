@@ -756,8 +756,15 @@ document.getElementById('expandBtn').addEventListener('click', function() {
 document.querySelectorAll('.app-template').forEach(card => {
     card.addEventListener('mouseenter', function() {
         if (reduceMovement === true) return;
+
         rotate = Math.floor(Math.random() * (5 - (-5) + 1)) + (-5)
-        card.style.transform = "rotate(" + rotate + "deg)"
+        card.style.transform = "rotate(" + rotate + "deg) scale(1.03)"
+
+        document.querySelectorAll('.app-template').forEach(other => {
+            if (other!== card) {
+                //other.style.filter = "brightness(0.85) blur(1.5px)" // i wanted to do smth here but im not sure..
+            }
+        });
     })
     
     card.addEventListener('mouseleave', function() {
