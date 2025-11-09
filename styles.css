@@ -547,7 +547,7 @@ input:checked + .slider:before {
     gap: 10px;
 }
 
-.submit-app-btn {
+.submit-app-btn1 {
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -570,6 +570,6 @@ input:checked + .slider:before {
     margin-bottom: 2px;
 }
 
-.submit-app-btn:hover {
+.submit-app-btn1:hover {
     transform: rotate(45deg);
 }

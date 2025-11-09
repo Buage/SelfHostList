@@ -809,24 +809,24 @@ document.getElementById('lightToggleInput').addEventListener('change', function(
     }
 })
 
-document.getElementById('submit-app-btn').addEventListener('click', function() {
+document.getElementById('submit-app-btn1').addEventListener('click', function() {
     document.querySelector('.submit-app').style.display = 'flex'
     document.querySelector('.overlay').style.display = 'block'
 });
 
-document.getElementById('submit-app').addEventListener('click', function() {
-    document.getElementById('submit-app').classList.add('submit-app-loading')
-    document.getElementById('submit-app').textContent = "Submitting..."
-    document.getElementById('submit-app').disabled = true
+document.getElementById('submit-app-btn').addEventListener('click', function() {
+    document.getElementById('submit-app-btn').classList.add('submit-app-loading')
+    document.getElementById('submit-app-btn').textContent = "Submitting..."
+    document.getElementById('submit-app-btn').disabled = true
 
     fetch("https://api.selfhostlist.org/submitApp.php?app=" + encodeURIComponent(document.getElementById('missingAppSubmitName').value))
     .then(() => {
         document.querySelector('.submit-app').style.display = 'none';
         document.querySelector('.overlay').style.display = 'none';
 
-        document.getElementById('submit-app').classList.remove('submit-app-loading')
-        document.getElementById('submit-app').textContent = "Send"
-        document.getElementById('submit-app').disabled = false
+        document.getElementById('submit-app-btn').classList.remove('submit-app-loading')
+        document.getElementById('submit-app-btn').textContent = "Send"
+        document.getElementById('submit-app-btn').disabled = false
     })
 });
 
