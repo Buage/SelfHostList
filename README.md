@@ -1,4 +1,4 @@
-<img src="https://www.selfhostlist.org/files/icons/home.png" align="center">
+<img src="https://www.selfhostlist.org/files/icons/home.png" align="center" width="100" height="100">
 
 ## SelfHostList
 SelfHostList is a website that list all welf hosted apps and alternatives i know, to help you find cool apps.
