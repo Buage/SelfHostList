@@ -357,6 +357,7 @@ hr {
     box-shadow: 1px 1px 5px var(--color-bg-card);
     cursor: pointer;
     border-radius: 3rem;
+    padding: 8px;
 }
 
 #filtersApplyBtn {
@@ -461,10 +462,19 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-.movement-options {
+.bottom-left {
     position: sticky;
     bottom: 10px;
     top: auto;
+    display: flex;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.movement-options {
     display: flex;
     gap: 10px;
 }
