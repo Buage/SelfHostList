@@ -576,6 +576,14 @@ const apps = [
         description: "Design and schedule automated files processing easily. Self hosted, and perfect for home labs, and cloud depoyments.",
         tags: ["file", "file processing"]
     },
+
+    {
+        name: "PrivateBin",
+        url: "https://github.com/PrivateBin/PrivateBin/",
+        icon: "/files/icons/PrivateBin-Small.png",
+        description: "A pastebin self hosted app with a strong in browser encryption and decryption, using 256bit AES, minimalistic and powerful.",
+        tags: ["text", "pastebin"]
+    },
 ];
 
 const existingFilters = [];
