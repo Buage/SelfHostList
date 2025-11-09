@@ -240,6 +240,10 @@ body {
     .full {
         display: flex;
     }
+
+    .movement-options {
+        display: none !important;
+    }
 }
 
 .app-template:hover {
