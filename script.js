@@ -568,6 +568,14 @@ const apps = [
         description: "Centralized file storage for all your devices, easy to use and designed for creators!",
         tags: ["file", "file management"]
     },
+
+    {
+        name: "FileFlows",
+        url: "https://fileflows.com/",
+        icon: "/files/icons/FileFlows-Small.png",
+        description: "Design and schedule automated files processing easily. Self hosted, and perfect for home labs, and cloud depoyments.",
+        tags: ["file", "file processing"]
+    },
 ];
 
 const existingFilters = [];
