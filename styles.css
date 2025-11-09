@@ -526,3 +526,9 @@ input:checked + .slider:before {
     display: flex;
     gap: 10px;
 }
+
+.websites-links {
+    gap: 10px;
+    display: flex;
+    margin-top: 10px;
+}
