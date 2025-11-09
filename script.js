@@ -609,6 +609,22 @@ const apps = [
         description: "A pastebin self hosted app with a strong in browser encryption and decryption, using 256bit AES, minimalistic and powerful.",
         tags: ["text", "pastebin"]
     },
+
+    {
+        name: "cState",
+        url: "https://github.com/cstate/cstate",
+        icon: "/files/icons/cState-Small.png",
+        description: "Status page, with a finished design, lightweight, make with HTML CSS. Highly custonizable, and an admin panel.",
+        tags: ["uptime", "monitoring"]
+    },
+
+    {
+        name: "Kutt",
+        url: "https://github.com/thedevs-network/kutt",
+        icon: "/files/icons/Kutt-Small.png",
+        description: "Modern and simple URL shortener with a custom domain supports, simple and efficient.",
+        tags: ["URL Shortener"]
+    },
 ];
 
 const existingFilters = [];
