@@ -245,7 +245,7 @@ body {
         display: flex;
     }
 
-    .movement-options {
+    .bottom-left {
         display: none !important;
     }
 }
