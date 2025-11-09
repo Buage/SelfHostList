@@ -28,6 +28,16 @@ body {
     --color-card-inside: #FFFFFF;
 }
 
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
 body.light .header-icon {
     filter: brightness(0.4);
 }
@@ -334,6 +344,26 @@ body.light .app-template:hover {
     display: none;
 }
 
+.submit-app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 180px;
+    z-index: 6;
+
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+
+.submit-app-loading {
+    opacity: 0.7 !important;
+}
+
 .overlay {
     top: 0;
     left: 0;
@@ -366,6 +396,24 @@ hr {
     gap: 10px;
     overflow-y: scroll;
     height: 360px;
+}
+
+.sa-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: scroll;
+    height: 360px;
+}
+
+#missingAppSubmitName {
+    width: 100%;
+    border-radius: 3cap;
+    outline: none;
+    border: none;
+    background-color: var(--color-shadow);
+    color: var(--color-button-bg);
+    text-indent: 15px;
 }
 
 .button {
@@ -497,4 +545,31 @@ input:checked + .slider:before {
 .light-options {
     display: flex;
     gap: 10px;
+}
+
+.submit-app-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--color-button-bg);
+    width: 35px;
+    height: 35px;
+    border-radius: 3cap;
+    color: var(--color-button-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-app-btn-text {
+    color: var(--color-button-text);
+    font-size: 26px;
+    opacity: 0.9;
+    margin-bottom: 2px;
+}
+
+.submit-app-btn:hover {
+    transform: rotate(45deg);
 }

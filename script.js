@@ -809,6 +809,27 @@ document.getElementById('lightToggleInput').addEventListener('change', function(
     }
 })
 
+document.getElementById('submit-app-btn').addEventListener('click', function() {
+    document.querySelector('.submit-app').style.display = 'flex'
+    document.querySelector('.overlay').style.display = 'block'
+});
+
+document.getElementById('submit-app').addEventListener('click', function() {
+    document.getElementById('submit-app').classList.add('submit-app-loading')
+    document.getElementById('submit-app').textContent = "Submitting..."
+    document.getElementById('submit-app').disabled = true
+
+    fetch("https://api.selfhostlist.org/submitApp.php?app=" + encodeURIComponent(document.getElementById('missingAppSubmitName').value))
+    .then(() => {
+        document.querySelector('.submit-app').style.display = 'none';
+        document.querySelector('.overlay').style.display = 'none';
+
+        document.getElementById('submit-app').classList.remove('submit-app-loading')
+        document.getElementById('submit-app').textContent = "Send"
+        document.getElementById('submit-app').disabled = false
+    })
+});
+
 if (getCookie('light') === 'true') {
     document.body.classList.remove('dark')
     document.body.classList.add('light')
