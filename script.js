@@ -744,6 +744,16 @@ document.getElementById('movementToggleInput').addEventListener('change', functi
     reduceMovement = document.getElementById('movementToggleInput').checked
 })
 
+document.getElementById('lightToggleInput').addEventListener('change', function() {
+    if (document.getElementById('lightToggleInput').checked) {
+        document.body.classList.remove('dark')
+        document.body.classList.add('light')
+    } else {
+        document.body.classList.add('dark')
+        document.body.classList.remove('light')
+    }
+})
+
 fetch("https://fuck.buage.dev/stats.php")
 .then(res => res.json())
 .then(data => {
