@@ -580,6 +580,7 @@ const apps = [
 
 const existingFilters = [];
 const appliedFilters = {};
+let reduceMovement = false;
 
 function createAppCard(app) {
     const card = document.createElement("a");
@@ -721,6 +722,7 @@ document.getElementById('expandBtn').addEventListener('click', function() {
 
 document.querySelectorAll('.app-template').forEach(card => {
     card.addEventListener('mouseenter', function() {
+        if (reduceMovement === true) return;
         rotate = Math.floor(Math.random() * (5 - (-5) + 1)) + (-5)
         card.style.transform = "rotate(" + rotate + "deg)"
     })
@@ -728,6 +730,10 @@ document.querySelectorAll('.app-template').forEach(card => {
     card.addEventListener('mouseleave', function() {
         card.style.transform = "rotate(0deg)"
     })
+})
+
+document.getElementById('movementToggleInput').addEventListener('change', function() {
+    reduceMovement = document.getElementById('movementToggleInput').checked
 })
 
 fetch("https://fuck.buage.dev/stats.php")
