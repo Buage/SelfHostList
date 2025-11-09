@@ -1,10 +1,8 @@
 <div align="center">
   <img src="https://www.selfhostlist.org/files/icons/home.png" align="center" width="100" height="100">
-  <h3>SelfHostList</h3>
+  <h2>SelfHostList</h2>
+  <p>SelfHostList is a website i made listing all self hosted apps and alternatives i know.</p>
 </div>
-
-## SelfHostList
-SelfHostList is a website that list all welf hosted apps and alternatives i know, to help you find cool apps.
 
 ## Star History
 
