@@ -625,6 +625,14 @@ const apps = [
         description: "Modern and simple URL shortener with a custom domain supports, simple and efficient.",
         tags: ["URL Shortener"]
     },
+
+    {
+        name: "Journiv",
+        url: "https://github.com/journiv/journiv-app",
+        icon: "/files/icons/Journiv-Small.png",
+        description: "Self hosted and private journal, with mood tracking, prompt based journaling, media, analytics and more.",
+        tags: ["journaling", "to-do list"]
+    },
 ];
 
 const existingFilters = [];
