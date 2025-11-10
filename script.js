@@ -633,6 +633,14 @@ const apps = [
         description: "Self hosted and private journal, with mood tracking, prompt based journaling, media, analytics and more.",
         tags: ["journaling", "to-do list"]
     },
+
+    {
+        name: "Amnezia",
+        url: "https://amnezia.org/",
+        icon: "/files/icons/Amnezia-Small.png",
+        description: "Censorship resistant self hosted VPN, easy to use, with a modern UI, for all your devices without limit.",
+        tags: ["VPN", "internet"]
+    },
 ];
 
 const existingFilters = [];
