@@ -641,6 +641,38 @@ const apps = [
         description: "Censorship resistant self hosted VPN, easy to use, with a modern UI, for all your devices without limit.",
         tags: ["VPN", "internet"]
     },
+
+    {
+        name: "Netdata",
+        url: "https://github.com/netdata/netdata/",
+        icon: "/files/icons/Netdata-Small.png",
+        description: "Real time monitoring platform, detect and monitor all your infrastructure.",
+        tags: ["monitoring", "infrastructure"]
+    },
+
+    {
+        name: "Emby",
+        url: "https://emby.media/",
+        icon: "/files/icons/Emby-Small.png",
+        description: "Media library on any devices, with easy access, live TV and everything you need to store your medias.",
+        tags: ["media", "streaming"]
+    },
+
+    {
+        name: "Vaultwarden",
+        url: "https://github.com/dani-garcia/vaultwarden",
+        icon: "/files/icons/Vaultwarden-Small.png",
+        description: "Open source self hosted password manager, lightweight, simple and efficient, an alternative to Bitwarden.",
+        tags: ["passwords"]
+    },
+
+    {
+        name: "OpenVPN",
+        url: "https://github.com/OpenVPN/openvpn",
+        icon: "/files/icons/OpenVPN-Small.png",
+        description: "Secure VPN server, it create encrypted tunnels between the client and the server to ensure it's secured.",
+        tags: ["VPN", "internet"]
+    },
 ];
 
 const existingFilters = [];
