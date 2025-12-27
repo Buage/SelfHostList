@@ -673,6 +673,22 @@ const apps = [
         description: "Secure VPN server, it create encrypted tunnels between the client and the server to ensure it's secured.",
         tags: ["VPN", "internet"]
     },
+
+    {
+        name: "copyparty",
+        url: "https://github.com/9001/copyparty",
+        icon: "/files/icons/copyparty-Small.png",
+        description: "Transform any device into a file server using copyparty! Simple, easy to use and lightweight.",
+        tags: ["storage", "cloud"]
+    },
+
+    {
+        name: "Poline",
+        url: "https://github.com/meodai/poline",
+        icon: "/files/icons/Poline-Small.png",
+        description: "Color palettes maker, it's easy to use, with a nice UI.",
+        tags: ["colors", "productivity"]
+    },
 ];
 
 const existingFilters = [];
