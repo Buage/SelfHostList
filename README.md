@@ -31,7 +31,7 @@ SelfHostList is listing all of the self hosted apps i know for now.
 
 ### 💡 Suggestions
 
-- If you have any idea, or you think an app is missing, feel free to DM me on Discord (@buage.) with the dot, or on reddit (/u/buage_)
+- If you have any idea, or you think an app is missing, feel free to DM me on Matrix (@buage:quassel.io) with the dot, or on reddit (/u/buage_)
 - If you find any bug, feel free to report it to me
 
 ---
