@@ -36,4 +36,4 @@ SelfHostList is listing all of the self hosted apps i know for now.
 
 ---
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Buage/SelfHostList&type=date&legend=top-left)](https://www.star-history.com/#Buage/SelfHostList&type=date&legend=top-left)
+[![Star History Chart](https://star-history.dera.page/svg?repos=Buage/SelfHostList&type=date&legend=top-left)](https://star-history.dera.page/#Buage/SelfHostList&type=date&legend=top-left)
